@@ -1,6 +1,9 @@
 .navbar {
     height: 60px;
     padding: 10px 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     background-color: var(--grey-green);
   
     .wrapper {
