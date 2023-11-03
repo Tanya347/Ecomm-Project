@@ -36,7 +36,7 @@ const FeaturedProducts = ({ type }) => {
         {
             id: 4,
             img: "/Assets/trays.jpg",
-            title: "Ethnic Bangles",
+            title: "Colorful Trays",
             oldPrice: 300,
             newPrice: 280
         },
