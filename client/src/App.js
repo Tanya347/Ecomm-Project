@@ -9,6 +9,10 @@ import {
 } from "react-router-dom"
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Login from './pages/Login/Login';
+import About from './pages/About/About';
+import Wishlist from './pages/Wishlist/Wishlist';
+
 
 const Layout = () => {
   return (
@@ -28,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />
+      },  
+      {
+        path: "/about",
+        element: <About />
+      }, 
+      {
+        path: "/wishlist",
+        element: <Wishlist />
       }, 
       {
         path: "/products/:id",
@@ -38,6 +50,10 @@ const router = createBrowserRouter([
         element: <Product />
       }
     ]
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ])
 
