@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link className ="link" to="/">Homepage</Link>
           </div>
           <div className="item">
-            <Link className ="link" to="/">About</Link>
+            <Link className ="link" to="/about">About</Link>
           </div>
           <div className="item">
             <Link className ="link" to="/">Contact</Link>
@@ -61,7 +61,9 @@ const Navbar = () => {
             <Link to="/login" className='link'>
               <PersonOutlineOutlinedIcon/>
             </Link>
-            <FavoriteBorderOutlinedIcon/>
+            <Link to="/wishlist" className='link'>
+              <FavoriteBorderOutlinedIcon/>
+            </Link>
             <div className="cartIcon" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>
               <span>1</span>
