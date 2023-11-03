@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from "react-router-dom"
 import List from "../../components/List/List"
 import { useState } from "react";
-import {data, categ, headers} from "./data"
+import { categ, headers} from "./data"
 import "./products.scss"
 
 const Products = () => {

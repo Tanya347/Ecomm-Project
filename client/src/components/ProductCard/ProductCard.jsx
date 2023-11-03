@@ -10,11 +10,11 @@ const ProductCard = ( {item} ) => {
         <div class="product-card">
           <div class="product-card__images">
             <div class="product-card__img">
-              <img class="img-1" src={item.img1} />
+              <img class="img-1" src={item.img1} alt=''/>
             </div>
 
             {item.img2 && <div class="product-card__img--hidden">
-              <img class="img-2" src={item.img2} />
+              <img class="img-2" src={item.img2} alt='' />
             </div>}
 
             <label class="product-card__like">
