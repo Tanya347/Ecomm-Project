@@ -2,32 +2,31 @@ import React from 'react'
 import { useParams } from "react-router-dom"
 import List from "../../components/List/List"
 import { useState } from "react";
+import {data, categ, headers} from "./data"
 import "./products.scss"
 
 const Products = () => {
 
-  const catId = parseInt(useParams().id)
+  const catId = useParams().id
   const [maxPrice, setMaxPrice] = useState(1000);
   const [sort, setSort] = useState(null);
 
   return (
     <div className='products'>
       <div className="left">
+
         <div className="filterItem">
           <h2>Product Categories</h2>
-          <div className="inputItem">
-            <input type="checkbox" id="1" value={1}/>
-            <label htmlFor="1">Handbags</label>
-          </div>
-          <div className="inputItem">
-            <input type="checkbox" id="2" value={2}/>
-            <label htmlFor="2">Decor</label>
-          </div>
-          <div className="inputItem">
-            <input type="checkbox" id="3" value={3}/>
-            <label htmlFor="3">Clothing</label>
-          </div>
+            {
+              categ[catId].map((item) => (
+                <div className="inputItem" key={item.id}>
+                  <input type="checkbox" id={item.id} value={item.id}/>
+                  <label htmlFor={item.id}>{item.name}</label>
+                </div>
+              ))
+            }
         </div>
+
         <div className="filterItem">
           <h2>Filter by Price</h2>
             <span>0</span>
@@ -52,7 +51,7 @@ const Products = () => {
         </div>
       </div>
       <div className="right">
-        <img src="https://images.unsplash.com/photo-1620619767323-b95a89183081?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='catImg' alt="" />
+        <img src={headers[catId]} className='catImg' alt="" />
         <List catId={catId} maxPrice={maxPrice} sort={sort} />
       </div>
     </div>
