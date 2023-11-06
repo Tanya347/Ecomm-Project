@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,10 +8,10 @@ const Footer = () => {
       <div className="top">
         <div className="item">
           <h1>Categories</h1>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Shoes</span>
+          <span>Handicrafts</span>
+          <span>Textiles</span>
           <span>Accessories</span>
+          <span>DIY</span>
           <span>New Arrivals</span>
         </div>
         <div className="item">
@@ -21,23 +22,21 @@ const Footer = () => {
           <span>Compare</span>
           <span>Cookies</span>
         </div>
-        <div className="item">
-          <h1>About</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
+          <div className="item">
+        <Link to="/about" style={{textDecoration: "none"}}>
+            <h1>About</h1>
+            <span>
+            At Kalakari, we are on a mission to empower local Indian artisans, craftsmen, small shop owners, and DIY enthusiasts by providing them with a thriving platform to showcase and sell their exceptional creations.
+            </span>
+        </Link>
+          </div>
         <div className="item">
           <h1>Contact</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
+          <span>Email: support@craftvillageindia.com</span>
+          <span>Phone: +91-123-456-7890</span>
+          <span>Address</span>
+          <span>CraftVillageIndia, 123, Artisan's Lane</span>
+          <span>Craftsville, India 56789</span>
         </div>
       </div>
       <div className="bottom">

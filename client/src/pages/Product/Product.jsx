@@ -31,7 +31,7 @@ const Product = () => {
       <div className="right">
         <h1>Embellished Jar</h1>
         <span className='price'>₹250</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad earum magni dicta. Eligendi voluptas aperiam odio illum in ducimus, autem quasi inventore nobis quam tempore accusantium mollitia, libero asperiores!</p>
+        <p>Adorned with delicate embellishments and hand-painted designs, this jar exudes timeless elegance, making it a perfect addition to your home decor or a cherished gift for a loved one</p>
         <div className="quantity">
           <button onClick={() => setQuantity((prev) => (prev === 1 ? 1 : prev - 1))}>-</button>
           {quantity}
@@ -49,11 +49,6 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="info">
-          <span>Vendor: Polo</span>
-          <span>Product Type: T-Shirt</span>
-          <span>Tag: T-Shirt, Women, Top</span>
-        </div>
         <div className="details">
           <span>DESCRIPTION</span>
           <hr />

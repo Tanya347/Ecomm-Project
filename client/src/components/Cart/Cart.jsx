@@ -10,7 +10,7 @@ const Cart = () => {
             img: "https://images.unsplash.com/photo-1627237072130-a20fdded539c?auto=format&fit=crop&q=80&w=1902&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             img2: "https://images.unsplash.com/photo-1627237072133-2978ac20e0ed?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
             title: "Embellished Jar",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad earum magni dicta. Eligendi voluptas aperiam odio illum in ducimus, autem quasi inventore nobis quam tempore accusantium mollitia, libero asperiores!",
+            desc: "Adorned with delicate embellishments and hand-painted designs, this jar exudes timeless elegance, making it a perfect addition to your home decor or a cherished gift for a loved one",
             isNew: true,
             price: 1100,
         },
@@ -19,7 +19,7 @@ const Cart = () => {
             img: "https://images.unsplash.com/photo-1601482438629-346a273776af?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGluZGlhbiUyMGJhbmdsZXN8ZW58MHwxfDB8fHww",
             img2: "https://images.unsplash.com/photo-1664506061150-ffc206b8bfd3?auto=format&fit=crop&q=80&w=1852&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             title: "Ethnic Bangles",
-            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ad earum magni dicta. Eligendi voluptas aperiam odio illum in ducimus, autem quasi inventore nobis quam tempore accusantium mollitia, libero asperiores!",
+            desc: "These exquisite pieces of handcrafted jewelry capture the essence of Indian culture and craftsmanship, adding a touch of elegance to any ensemble.",
             isNew: true,
             price: 500,
         },
@@ -34,7 +34,7 @@ const Cart = () => {
                     <img src={item.img} alt="" />
                     <div className="details">
                         <h1>{item.title}</h1>
-                        <p>{item.desc.substring(0, 100)}</p>
+                        <p>{item.desc.substring(0, 100)}...</p>
                         <div className="price">1 x ₹{item.price}</div>
                     </div>
                     <DeleteOutlinedIcon className='delete'/>

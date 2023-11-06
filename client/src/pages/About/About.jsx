@@ -1,5 +1,6 @@
 import React from 'react'
 import "./about.scss"
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           <img src="/Assets/header.jpg" alt="" />
           <div className="details">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro odio eligendi tempora assumenda officia, aliquid, cumque aspernatur corrupti harum corporis rerum minima eum aliquam quod laborum nisi quasi sit dolore?</p>
+            <p>At Kalakari, we are on a mission to empower local Indian artisans, craftsmen, small shop owners, and DIY enthusiasts by providing them with a thriving platform to showcase and sell their exceptional creations.</p>
           </div>
         </div>
 
@@ -20,11 +21,11 @@ const About = () => {
             </div>
             <right className="right-col">
               <h1>Our Mission</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quas? Doloremque dicta repellat cupiditate deleniti, vel dolore optio? Earum dignissimos provident repudiandae animi delectus minima inventore, libero harum? Quidem, minima.</p>
+              <p>We believe that every handmade product tells a story, and by supporting local talent, we contribute to preserving and celebrating India's diverse cultural heritage. Our curated marketplace is a testament to the talent, creativity, and dedication of our artisan partners, who pour their hearts into every creation. Join us in this journey to discover, appreciate, and support the soulful artistry of India.</p>
             </right>
           </div>
           <div className="lower-row">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus, cumque quod necessitatibus eos eius provident id, nemo distinctio atque esse molestiae ducimus sed magnam non adipisci modi mollitia alias.</p>
+            <p>In addition to celebrating the work of seasoned artisans, Kalakari is a dedicated platform that warmly embraces DIY enthusiasts and artists. We understand the immense creativity and passion that go into crafting something with your own hands. Our platform provides a nurturing space for DIY artists, where they can showcase their self-made wonders and connect with a community that appreciates the art of creating from scratch.</p>
             <img src="/Assets/about-diy.png" alt="" />
           </div>
         </div>
@@ -33,17 +34,28 @@ const About = () => {
           <img src="/Assets/categories.jpg" alt="" />
           <div className="buttons">
             <div className="focus-button">
-              <button>New Season</button>
+              <Link to="/products/new">
+                <button>New Season</button>
+              </Link>
             </div>
             <div className="category-button">
-              <button>Textiles</button>
-              <button>Handcrafts</button>
-              <button>Accessories</button>
-              <button>Handicrafts</button>
-              <button>DIY</button>
+              <Link to="/products/text">
+                <button>Textiles</button>
+              </Link>
+              <Link to="/products/handi">
+                <button>Handcrafts</button>
+              </Link>
+              <Link to="/products/acc">
+                <button>Accessories</button>
+              </Link>
+              <Link to="/products/diy">
+                <button>DIY</button>
+              </Link>
             </div>
             <div className="focus-button">
-              <button>Sale</button>
+              <Link to="/products/sale">
+                <button>Sale</button>
+              </Link>
             </div>
           </div>
         </div>
