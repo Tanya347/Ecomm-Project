@@ -1,22 +1,35 @@
 import React from 'react'
+import PhoneIcon from '@mui/icons-material/Phone';
 import Navbar from "../../components/Navbar/Navbar"
-import "./login.scss"
+import "./register.scss"
 
-const Login = () => {
+const Register = () => {
   return (
-    <div className='loginPage'>
+    <div className='registerPage'>
         <Navbar />
         <div class="grid">
 
-            <h2 className='title'>Welcome Back!</h2>
+            <h2 className='title'>Join our Community!</h2>
 
             <form action="https://httpbin.org/post" method="POST" class="form login">
 
             <div class="form__field">
                 <label for="login__username"><svg class="icon">
                     <use href="#icon-user"></use>
+                </svg><span class="hidden">Name</span></label>
+                <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Name" required />
+            </div>
+
+            <div class="form__field">
+                <label for="login__username"><svg class="icon">
+                    <use href="#icon-user"></use>
                 </svg><span class="hidden">Username</span></label>
                 <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Username" required />
+            </div>
+
+            <div class="form__field">
+                <label for="login__username"><PhoneIcon /><span class="hidden">Phone Number</span></label>
+                <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Phone Number" required />
             </div>
 
             <div class="form__field">
@@ -32,7 +45,7 @@ const Login = () => {
 
             </form>
 
-    <p class="text--center">Not a member? <a href="/register">Sign up now</a> <svg class="icon">
+    <p class="text--center">Already a member? <a href="/login">Sign In</a> <svg class="icon">
         <use href="#icon-arrow-right"></use>
     </svg></p>
 
@@ -53,4 +66,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Register
